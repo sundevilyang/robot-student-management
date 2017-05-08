@@ -10,7 +10,7 @@ class Choice {
 
   showText(number) {
     if (number === '3') {
-      return {type: 'Text', info: '请您直接发送合作意向邮件至 sponsor@codinggirls.club ,我们会迅速与您取得联系'};
+      return {type: 'Text', info: '请您直接发送合作意向邮件至 sponsor@codingirls.club ,我们会迅速与您取得联系'};
     } else {
       return {type: 'Text', info: '请输入您的姓名、公司或学校名称'};
     }

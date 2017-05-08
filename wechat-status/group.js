@@ -2,7 +2,7 @@ const UserStatus = require('../model/userStatus');
 
 class Group {
   showText(userId) {
-    return {type: 'Text', info: '欢迎加入'};
+    return {type: 'Text', info: '哇，第一次发言哦，Mark一下'};
   }
 
   handler(groupId, message, userId, callback) {

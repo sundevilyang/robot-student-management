@@ -10,7 +10,7 @@ class Change {
 
   showText() {
     return {
-      type: 'Text', info: `请选择您的角色[回复数字]:
+      type: 'Text', info: `请选择您的角色[请回复数字]:
      1.我想当学员
      2.我想当助教
      3.我想合作`

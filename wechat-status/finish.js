@@ -3,7 +3,7 @@ const UserStatus = require('../model/userStatus');
 class finish {
 
   showText() {
-    return {type: 'Text', info: '您已完成信息录入，请输入英文字母q退出'};
+    return {type: 'Text', info: '已完成，请输入q退出'};
   }
 
   handler(userId, message, callback) {
