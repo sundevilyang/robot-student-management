@@ -15,32 +15,33 @@ class InputCity {
     if (NumberSex === '男') {
       return {type: 'add_member', info: '全国学员群👦'};
     } else {
-      sex = '👧';
-      switch (city) {
-        case '成都':
-          return {type: 'add_member', info: '女性编程日-成都群' + sex};
-        case '北京':
-          return {type: 'add_member', info: '女性编程日-北京群' + sex};
-        case '深圳':
-          return {type: 'add_member', info: '女性编程日-深圳群' + sex};
-        case '上海':
-          return {type: 'add_member', info: '女性编程日-上海群' + sex};
-        case '西安':
-          return {type: 'add_member', info: '女性编程日-西安群' + sex};
-        case '武汉':
-          return {type: 'add_member', info: '女性编程日-武汉群' + sex};
-        case '杭州':
-          return {type: 'add_member', info: '女性编程日-杭州群' + sex};
-        case '广州':
-          return {type: 'add_member', info: '女性编程日-广州群' + sex};
-        case '南京':
-          return {type: 'add_member', info: '女性编程日-南京群' + sex};
-        case '重庆':
-          return {type: 'add_member', info: '女性编程日-重庆群' + sex};
+      return {type: 'add_member', info: 'Girls Coding Day 👧'};
+      // sex = '👧';
+      // switch (city) {
+      //   case '成都':
+      //     return {type: 'add_member', info: '女性编程日-成都群' + sex};
+      //   case '北京':
+      //     return {type: 'add_member', info: '女性编程日-北京群' + sex};
+      //   case '深圳':
+      //     return {type: 'add_member', info: '女性编程日-深圳群' + sex};
+      //   case '上海':
+      //     return {type: 'add_member', info: '女性编程日-上海群' + sex};
+      //   case '西安':
+      //     return {type: 'add_member', info: '女性编程日-西安群' + sex};
+      //   case '武汉':
+      //     return {type: 'add_member', info: '女性编程日-武汉群' + sex};
+      //   case '杭州':
+      //     return {type: 'add_member', info: '女性编程日-杭州群' + sex};
+      //   case '广州':
+      //     return {type: 'add_member', info: '女性编程日-广州群' + sex};
+      //   case '南京':
+      //     return {type: 'add_member', info: '女性编程日-南京群' + sex};
+      //   case '重庆':
+      //     return {type: 'add_member', info: '女性编程日-重庆群' + sex};
 
-        default:
-          return {type: 'add_member', info: '女性编程日-全国群' + sex};
-      }
+      //   default:
+      //     return {type: 'add_member', info: '女性编程日-全国群' + sex};
+      // }
     }
   }
 

@@ -13,7 +13,7 @@ const constant = {
     2.我要当助教
     3.我想合作`
     },
-    err: {type: 'Text', info: '输入格式有误,请按要求重新输入；或输入q返回原点重新开始'},
+    err: {type: 'Text', info: '输入格式有误,请按要求重新输入；或输入q重新回答'},
     incorrect: {type: 'Text', info: '输入格式有误'},
     no: {type: 'Null', info: ''},
     end: {type: 'Text', info: '主题讨论终止'}
