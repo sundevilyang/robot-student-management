@@ -12,16 +12,16 @@ class TutorCity {
 
   showText(city) {
     switch (city) {
-      case '成都': return {type: 'add_member', info: '成都教练群'};
-      case '北京': return {type: 'add_member', info: '北京教练群'};
-      case '深圳': return {type: 'add_member', info: '深圳教练群'};
-      case '上海': return {type: 'add_member', info: '上海教练群'};
-      case '西安': return {type: 'add_member', info: '西安教练群'};
-      case '武汉': return {type: 'add_member', info: '武汉教练群'};
-      case '重庆': return {type: 'add_member', info: '重庆教练群'};
-      case '广州': return {type: 'add_member', info: '广州教练群'};
-      case '南京': return {type: 'add_member', info: '南京教练群'};
-      case '杭州': return {type: 'add_member', info: '杭州教练群'};
+      // case '成都': return {type: 'add_member', info: '成都教练群'};
+      // case '北京': return {type: 'add_member', info: '北京教练群'};
+      // case '深圳': return {type: 'add_member', info: '深圳教练群'};
+      // case '上海': return {type: 'add_member', info: '上海教练群'};
+      // case '西安': return {type: 'add_member', info: '西安教练群'};
+      // case '武汉': return {type: 'add_member', info: '武汉教练群'};
+      // case '重庆': return {type: 'add_member', info: '重庆教练群'};
+      // case '广州': return {type: 'add_member', info: '广州教练群'};
+      // case '南京': return {type: 'add_member', info: '南京教练群'};
+      // case '杭州': return {type: 'add_member', info: '杭州教练群'};
       default: return {type: 'add_member', info: '全国教练群'};
     }
   }
