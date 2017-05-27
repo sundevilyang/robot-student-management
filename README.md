@@ -54,8 +54,8 @@ c. type为add_member，info为群名，表示将用户拉进群
 ** 每个状态下的handler函数做的处理就是存储数据，更新用户或群的状态，返回数据三个模块
 
 *私聊状态变更流程*
-* 我要当学员：info -> choice -> information -> input_gender -> input_city -> finish -> change -> choice
-* 我要当助教：info -> choice -> assistant -> language -> assistant_city -> finish -> change -> choice
+* 我要当学员：info -> choice -> student -> input_gender -> input_city -> finish -> change -> choice
+* 我要当助教：info -> choice -> tutor -> language -> tutor_city -> finish -> change -> choice
 * 我想合作：info -> choice -> finish -> change -> choice
 
 *群聊状态变更流程*
