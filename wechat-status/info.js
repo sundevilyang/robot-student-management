@@ -1,5 +1,6 @@
-/*用户加机器人好友状态：数据库创建用户新状态，并给用户返回文本信息*/
+/*用户已加机器人为好友状态：数据库创建用户新状态，并给用户返回文本信息*/
 const UserStatus = require('../model/userStatus');
+const Constant = require('../config/constant');
 
 class Info {
   showText() {
@@ -12,12 +13,17 @@ class Info {
   }
 
   handler(userId, message, callback) {
-    UserStatus.create({userId: userId, status: 'choice'}, (err) => {
-      if (err) {
-        return callback(err, null);
-      }
-      return callback(null, this.showText());
-    });
+    if (message.type === 'Note' && message.text.includes('现在可以开始聊天了')){
+      UserStatus.create({userId: userId, status: 'choice'}, (err) => {
+        if (err) {
+          return callback(err, null);
+        }
+        return callback(null, this.showText());
+      });
+    } else {
+      return callback(null, Constant.validate.no);
+    }
+
   }
 }
 
