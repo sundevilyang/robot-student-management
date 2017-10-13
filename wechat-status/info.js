@@ -3,28 +3,29 @@ const UserStatus = require('../model/userStatus');
 const Constant = require('../config/constant');
 
 class Info {
-  showText() {
-    return {
-      type: 'Text', info: `您好，请选择您的角色[请回复数字]:
+    showText() {
+        return {
+            type: 'Text',
+            info: `您好，回答完问题后拉你入群，请选择您的角色[请回复数字]:
     1.我想当学员
     2.我想当助教或者志愿者
     3.我想合作`
-    };
-  }
-
-  handler(userId, message, callback) {
-    if (message.type === 'Note' && message.text.includes('现在可以开始聊天了')){
-      UserStatus.create({userId: userId, status: 'choice'}, (err) => {
-        if (err) {
-          return callback(err, null);
-        }
-        return callback(null, this.showText());
-      });
-    } else {
-      return callback(null, Constant.validate.no);
+        };
     }
 
-  }
+    handler(userId, message, callback) {
+        if (message.type === 'Note' && message.text.includes('现在可以开始聊天了')) {
+            UserStatus.create({ userId: userId, status: 'choice' }, (err) => {
+                if (err) {
+                    return callback(err, null);
+                }
+                return callback(null, this.showText());
+            });
+        } else {
+            return callback(null, Constant.validate.no);
+        }
+
+    }
 }
 
 module.exports = Info;
